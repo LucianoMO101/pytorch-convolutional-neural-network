@@ -8,16 +8,16 @@ Dit project is bedoeld als leerervaring om te begrijpen hoe CNN’s werken en ho
 ---
 
 ## 📘 Inhoudsopgave
+- [H1. 🧩 Wat is een Convolutional Neural Network (CNN)?](#h1-🧩-wat-is-een-convolutional-neural-network-cnn)
+- [H2. 💻 Projectoverzicht](#h2-💻-projectoverzicht)
+- [H3. 🧱 Modelarchitectuur](#h3-🧱-modelarchitectuur)
+- [H4. 🗂 Dataset](#h4-🗂-dataset)
+- [H5. ⚙️ Benodigde installaties](#h5-⚙️-benodigde-installaties)
+- [H6. ▶️ Uitvoeren in Google Colab](#h6-▶️-uitvoeren-in-google-colab)
+- [H7. 📊 Resultaten](#h7-📊-resultaten)
+- [H8. 🖼️ Visuele Hulpmiddelen](#h8-🖼️-visuele-hulpmiddelen)
+- [H9. 🧠 Samenvatting](#h9-🧠-samenvatting)
 
-1. [Wat is een CNN?](#-wat-is-een-convolutional-neural-network-cnn)
-2. [Projectoverzicht](#-projectoverzicht)
-3. [Modelarchitectuur](#-modelarchitectuur)
-4. [Dataset](#-dataset)
-5. [Benodigde installaties](#-benodigde-installaties)
-6. [Uitvoeren in Google Colab](#-uitvoeren-in-google-colab)
-7. [Resultaten](#-resultaten)
-8. [Visuele Hulpmiddelen](#-visuele-hulpmiddelen)
-9. [Samenvatting](#-samenvatting)
 
 ---
 
