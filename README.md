@@ -17,8 +17,7 @@ Dit project is bedoeld als leerervaring om te begrijpen hoe CNN’s werken en ho
 6. [Uitvoeren in Google Colab](#-uitvoeren-in-google-colab)
 7. [Resultaten](#-resultaten)
 8. [Visuele Hulpmiddelen](#-visuele-hulpmiddelen)
-9. [Toekomstige Verbeteringen](#-toekomstige-verbeteringen)
-10. [Licentie](#-licentie)
+9. [Samenvatting](#-samenvatting)
 
 ---
 
@@ -110,8 +109,51 @@ Gemiddelde nauwkeurigheid na 5 epochs:
 ```
 ### 📈 Trainingsgrafieken
 **Verlies per epoch**
+
 <img width="572" height="457" alt="image" src="https://github.com/user-attachments/assets/a9c3863f-e186-42a4-91bc-248281a5e4d2" />
 
 **Nauwkeurigheid per epoch**
+
 <img width="567" height="462" alt="image" src="https://github.com/user-attachments/assets/27c952a2-e0ce-4966-92c7-98619999b8c6" />
 
+## H8. 🖼️ Visuele Hulpmiddelen
+Voorbeeld van een invoerafbeelding (MNIST):
+```python
+plt.imshow(test_data[4143][0].reshape(28,28), cmap='gray')
+```
+
+Uitvoer van modelvoorspelling:
+```python
+model.eval()
+with torch.no_grad():
+    new_prediction = model(test_data[4143][0].view(1,1,28,28))
+new_prediction.argmax()
+```
+Output:
+```
+Voorspeld cijfer: 7
+```
+
+## H9. 🧠 Samenvatting
+| Onderdeel | Beschrijving |
+|------------|---------------|
+| **Doel** | Cijferherkenning met een Convolutional Neural Network (CNN) |
+| **Framework** | PyTorch |
+| **Omgeving** | Google Colab |
+| **Dataset** | MNIST (handgeschreven cijfers 0–9) |
+| **Architectuur** | 2 Convolutielagen + 3 Volledig Verbonden Lagen |
+| **Activatiefunctie** | ReLU + LogSoftmax |
+| **Optimizer** | Adam (lr=0.001) |
+| **Lossfunctie** | CrossEntropyLoss |
+| **Aantal epochs** | 5 |
+| **Batch size** | 10 |
+| **Gemiddelde nauwkeurigheid** | ±98% op testset |
+| **Trainingstijd** | Ongeveer 3–5 minuten (met GPU) |
+| **Besturingssysteem / Platform** | Google Colab (Python 3) |
+| **Visuele output** | Verlies- en nauwkeurigheidsplots, voorbeeldvoorspellingen |
+| **Licentie** | MIT-licentie |
+
+---
+
+
+📌 Auteur: **Luciano Mollen**
